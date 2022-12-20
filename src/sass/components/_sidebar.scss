@@ -1,0 +1,58 @@
+.sidebar {
+  width: 20%;
+  height: 100vw;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  position: fixed;
+  border-right: 5px solid rgba(0, 0, 0, 0.2);
+  &__title {
+    padding: 30px 10px 10px 10px;
+    margin-left: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #424344;
+  }
+  hr{
+    border: 1px solid;
+    background-color: #E0E9E9;
+    color: #424344;
+  }
+  &__nav {
+    ul {
+      margin: 30px 12px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #424344;
+          display: flex;
+          text-align: center;
+          cursor: pointer;
+          padding: 18px;
+         
+          h5 {
+            font-size: 14px;
+            font-weight: 400 !important;
+            line-height: 1.5;
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: gray;
+          }
+          &.active {
+            background-color: #C32055;
+            color: whitesmoke;
+            border: 1px solid #C5708D;
+          }
+          &.active svg {
+            fill: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
