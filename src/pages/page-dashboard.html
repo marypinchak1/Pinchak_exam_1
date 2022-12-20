@@ -1,6 +1,7 @@
 <main class="dashboard">
-    <h1 class="dashboard__title">Dashboard</h1>
-    <section class="statistics d-flex gap-3">
+  <h1 class="dashboard__title">Dashboard</h1>
+  <section class="statistics d-flex gap-3">
+    <div class="d-flex gap-3">
       <a>
         <div class="statistics__item">
           <div class="statistics__item_icon">
@@ -33,6 +34,8 @@
           </div>
         </div>
       </a>
+    </div>
+    <div class="d-flex gap-3">
       <a>
         <div class="statistics__item">
           <div class="statistics__item_icon blue">
@@ -65,283 +68,236 @@
           </div>
         </div>
       </a>
-    </section>
-    <section class="graphics d-flex gap-3">
-      <div>
-        <div class="graphics__item">
-          <div class="graphics__item_icon">
-            <img
-              class="graphics__item_icon_img"
-              src="img/graphics.svg"
-              alt="graphics"
-            />
+    </div>
+  </section>
+  <section class="graphics d-flex gap-3">
+    <div>
+      <div class="graphics__item">
+        <div class="graphics__item_icon">
+          <img
+            class="graphics__item_icon_img"
+            src="img/graphics.svg"
+            alt="graphics"
+          />
+        </div>
+        <p class="graphics__item_name">Daily Sales</p>
+        <p class="graphics__item_description">55% increase in today sales</p>
+        <hr />
+        <div class="d-flex">
+          <img src="img/time.png" alt="alert" />
+          <p>updated 4 minutes ago</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="graphics__item">
+        <div class="graphics__item_icon orange">
+          <img
+            class="graphics__item_icon_img"
+            src="img/graphics.svg"
+            alt="graphics"
+          />
+        </div>
+        <p class="graphics__item_name">Email Subscriptions</p>
+        <p class="graphics__item_description">Last Campaign Performance</p>
+        <hr />
+        <div class="d-flex">
+          <img src="img/time.png" alt="alert" />
+          <p>campaign sent 2 days ago</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="graphics__item">
+        <div class="graphics__item_icon blue">
+          <img
+            class="graphics__item_icon_img"
+            src="img/graphics.svg"
+            alt="graphics"
+          />
+        </div>
+        <p class="graphics__item_name">Completed Tasks</p>
+        <p class="graphics__item_description">Last Campaign Performance</p>
+        <hr />
+        <div class="d-flex">
+          <img src="img/time.png" alt="alert" />
+          <p>campaign sent 2 days ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tasks d-flex gap-3">
+    <div>
+      <div class="tasks__item">
+        <div class="tasks__item_icon orange d-flex">
+          <h3 class="tasks__item_icon_title">Tasks:</h3>
+          <div id="tab-1" class="item active d-flex" data-tabs="1">
+            <svg>
+              <use href="#bug"></use>
+            </svg>
+            <h3>Bugs</h3>
           </div>
-          <p class="graphics__item_name">Daily Sales</p>
-          <p class="graphics__item_description">
-            55% increase in today sales
-          </p>
-          <hr />
-          <div class="d-flex">
-            <img src="img/time.png" alt="alert" />
-            <p>updated 4 minutes ago</p>
+          <div id="tab-2" class="item d-flex" data-tabs="2">
+            <svg>
+              <use href="#website"></use>
+            </svg>
+            <h3>Website</h3>
+          </div>
+          <div id="tab-3" class="item d-flex" data-tabs="3">
+            <svg>
+              <use href="#server"></use>
+            </svg>
+            <h3>Server</h3>
+          </div>
+        </div>
+        <div class="content__tabs">
+          <div class="content" data-tabs="1">
+            <table class="tg">
+              <thead>
+                <tr>
+                  <td class="tg-wo29">
+                    <input
+                      type="checkbox"
+                      id="task1"
+                      name="task1"
+                      value="task1"
+                    />
+                  </td>
+                  <td class="tg-wo29">
+                    <label for="task1"
+                      >Sign contract for "What are conference organizers afraid
+                      of?"</label
+                    >
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/edit.png" alt="edit" /></a>
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/remove.png" alt="remove" /></a>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-wo29">
+                    <input
+                      type="checkbox"
+                      id="task2"
+                      name="task2"
+                      value="task2"
+                    />
+                  </td>
+                  <td class="tg-wo29">
+                    <label for="task2"
+                      ><span
+                        >Lines From Great Ukrainian Literature? Or E-mails From
+                        My Boss?"</span
+                      ></label
+                    >
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/edit.png" alt="edit" /></a>
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/remove.png" alt="remove" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-wo29">
+                    <input
+                      type="checkbox"
+                      id="task3"
+                      name="task3"
+                      value="task3"
+                    />
+                  </td>
+                  <td class="tg-wo29">
+                    <label for="task3"
+                      >Sign contract for "What are conference organizers afraid
+                      of?"</label
+                    >
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/edit.png" alt="edit" /></a>
+                  </td>
+                  <td class="tg-wo29">
+                    <a href="#"><img src="img/remove.png" alt="remove" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg">
+                    <input
+                      type="checkbox"
+                      id="task4"
+                      name="task4"
+                      value="task4"
+                    />
+                  </td>
+                  <td class="tg">
+                    <label for="task4"
+                      >Sign contract for "What are conference organizers afraid
+                      of?"</label
+                    >
+                  </td>
+                  <td class="tg">
+                    <a href="#"><img src="img/edit.png" alt="edit" /></a>
+                  </td>
+                  <td class="tg">
+                    <a href="#"><img src="img/remove.png" alt="remove" /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-      <div>
-        <div class="graphics__item">
-          <div class="graphics__item_icon orange">
-            <img
-              class="graphics__item_icon_img"
-              src="img/graphics.svg"
-              alt="graphics"
-            />
-          </div>
-          <p class="graphics__item_name">Email Subscriptions</p>
-          <p class="graphics__item_description">Last Campaign Performance</p>
-          <hr />
-          <div class="d-flex">
-            <img src="img/time.png" alt="alert" />
-            <p>campaign sent 2 days ago</p>
-          </div>
+    </div>
+    <div>
+      <div class="tasks__item">
+        <div class="tasks__item_icon blue">
+          <h2>Employees Stats</h2>
+          <h3>New employees on 19th September, 2019</h3>
+        </div>
+        <div class="tasks__employees">
+          <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-wo29">ID</th>
+                <th class="tg-wo29">Name</th>
+                <th class="tg-wo29">Salary</th>
+                <th class="tg-wo29">Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-wo29">1</td>
+                <td class="tg-wo29">Dacota Rice</td>
+                <td class="tg-wo29">$36.738</td>
+                <td class="tg-wo29">Niger</td>
+              </tr>
+              <tr>
+                <td class="tg-wo29">1</td>
+                <td class="tg-wo29">Dacota Rice</td>
+                <td class="tg-wo29">$36.738</td>
+                <td class="tg-wo29">Niger</td>
+              </tr>
+              <tr>
+                <td class="tg-wo29">1</td>
+                <td class="tg-wo29">Dacota Rice</td>
+                <td class="tg-wo29">$36.738</td>
+                <td class="tg-wo29">Niger</td>
+              </tr>
+              <tr>
+                <td class="tg">1</td>
+                <td class="tg">Dacota Rice</td>
+                <td class="tg">$36.738</td>
+                <td class="tg">Niger</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div>
-        <div class="graphics__item">
-          <div class="graphics__item_icon blue">
-            <img
-              class="graphics__item_icon_img"
-              src="img/graphics.svg"
-              alt="graphics"
-            />
-          </div>
-          <p class="graphics__item_name">Completed Tasks</p>
-          <p class="graphics__item_description">Last Campaign Performance</p>
-          <hr />
-          <div class="d-flex">
-            <img src="img/time.png" alt="alert" />
-            <p>campaign sent 2 days ago</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="tasks d-flex gap-3">
-      <div>
-        <div class="tasks__item">
-          <div class="tasks__item_icon orange d-flex">
-            <h3 class="tasks__item_icon_title">Tasks:</h3>
-            <div id="tab-1" class="item active d-flex" data-tabs="1">
-              <svg>
-                <use href="#bug"></use>
-              </svg>
-              <h3>Bugs</h3>
-            </div>
-            <div id="tab-2" class="item d-flex" data-tabs="2">
-              <svg>
-                <use href="#website"></use>
-              </svg>
-              <h3>Website</h3>
-            </div>
-            <div id="tab-3" class="item d-flex" data-tabs="3">
-              <svg>
-                <use href="#server"></use>
-              </svg>
-              <h3>Server</h3>
-            </div>
-          </div>
-          <div class="content__tabs">
-            <div class="content" data-tabs="1">
-              <table class="tg">
-                <thead>
-                  <tr>
-                    <td class="tg-wo29">
-                      <input
-                        type="checkbox"
-                        id="task1"
-                        name="task1"
-                        value="task1"
-                      />
-                    </td>
-                    <td class="tg-wo29">
-                      <label for="task1"
-                        >Sign contract for "What are conference organizers
-                        afraid of?"</label
-                      >
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"><img src="img/edit.png" alt="edit" /></a>
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"
-                        ><img src="img/remove.png" alt="remove"
-                      /></a>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="tg-wo29">
-                      <input
-                        type="checkbox"
-                        id="task2"
-                        name="task2"
-                        value="task2"
-                      />
-                    </td>
-                    <td class="tg-wo29">
-                      <label for="task2"
-                        ><span>Lines From Great Ukrainian Literature? Or E-mails From My Boss?"</span></label
-                      >
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"><img src="img/edit.png" alt="edit" /></a>
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"
-                        ><img src="img/remove.png" alt="remove"
-                      /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wo29">
-                      <input
-                        type="checkbox"
-                        id="task3"
-                        name="task3"
-                        value="task3"
-                      />
-                    </td>
-                    <td class="tg-wo29">
-                      <label for="task3"
-                        >Sign contract for "What are conference organizers
-                        afraid of?"</label
-                      >
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"><img src="img/edit.png" alt="edit" /></a>
-                    </td>
-                    <td class="tg-wo29">
-                      <a href="#"
-                        ><img src="img/remove.png" alt="remove"
-                      /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg">
-                      <input
-                        type="checkbox"
-                        id="task4"
-                        name="task4"
-                        value="task4"
-                      />
-                    </td>
-                    <td class="tg">
-                      <label for="task4"
-                        >Sign contract for "What are conference organizers
-                        afraid of?"</label
-                      >
-                    </td>
-                    <td class="tg">
-                      <a href="#"><img src="img/edit.png" alt="edit" /></a>
-                    </td>
-                    <td class="tg">
-                      <a href="#"
-                        ><img src="img/remove.png" alt="remove"
-                      /></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="tasks__item">
-          <div class="tasks__item_icon blue">
-            <h2>Employees Stats</h2>
-            <h3>New employees on 19th September, 2019</h3>
-          </div>
-          <div class="tasks__employees">
-           
-              <table class="tg">
-                <thead>
-                  <tr>
-                    <th class="tg-wo29">
-                     ID
-                    </th>
-                    <th class="tg-wo29">
-                    Name
-                    </th>
-                    <th class="tg-wo29">
-                     Salary
-                    </th>
-                    <th class="tg-wo29">
-                      Country
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="tg-wo29">
-                    1
-                    </td>
-                    <td class="tg-wo29">
-                     Dacota Rice
-                    </td>
-                    <td class="tg-wo29">
-                     $36.738
-                    </td>
-                    <td class="tg-wo29">
-                     Niger
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wo29">
-                    1
-                    </td>
-                    <td class="tg-wo29">
-                     Dacota Rice
-                    </td>
-                    <td class="tg-wo29">
-                     $36.738
-                    </td>
-                    <td class="tg-wo29">
-                     Niger
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wo29">
-                    1
-                    </td>
-                    <td class="tg-wo29">
-                     Dacota Rice
-                    </td>
-                    <td class="tg-wo29">
-                     $36.738
-                    </td>
-                    <td class="tg-wo29">
-                     Niger
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tg">
-                    1
-                    </td>
-                    <td class="tg">
-                      Dacota Rice
-                    </td>
-                    <td class="tg">
-                      $36.738
-                    </td>
-                    <td class="tg">
-                      Niger                      </td>
-                  </tr>
-                </tbody>
-              </table>
-            
-          </div>
-        </div>
-      </div>
-      <hr />
-    </section>
-  </main>
+    </div>
+    <hr />
+  </section>
+</main>

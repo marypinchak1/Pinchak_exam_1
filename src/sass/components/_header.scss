@@ -1,4 +1,49 @@
-.header{
-    background-color: rgb(182, 174, 61);
-    color: #fff;
+.header {
+  display: none;
+
+  @media screen and(max-width: 800px) {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 2%;
+    z-index: 1;
+  }
+  &__burger {
+    width: 40px;
+    height: 30px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    span {
+      border: 1px solid #424344;
+      height: 4px;
+      background-color: #424344;
+      width: 100%;
+     
+    }
+    &.active {
+      position: relative;
+     
+      :first-child {
+        transform: translateX(-50%) rotate(45deg);
+        bottom: calc(50% - 2px);
+        left: 50%;
+        position: absolute;
+        width: 80%;
+      }
+      :last-child {
+        transform: translateX(-50%) rotate(-45deg);
+        bottom: calc(50% - 2px);
+        left: 50%;
+        position: absolute;
+        width: 80%;
+      }
+      :nth-child(2){
+        display: none;
+      }
+    }
+  }
 }

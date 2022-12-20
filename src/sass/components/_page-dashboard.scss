@@ -4,26 +4,52 @@
   padding-top: 30px;
   padding-left: 2%;
   padding-right: 2%;
+  @media screen and(max-width:800px) {
+    margin-left: 0;
+    position: relative;
+  }
   &__title {
     padding-bottom: 66px;
-
     font-size: 22px;
     font-weight: 800;
     color: #424344;
+    @media screen and(max-width:800px) {
+      margin-left: 60px;
+    }
   }
 }
 .statistics {
   padding-bottom: 60px;
-  a {
-    display: block;
-    text-decoration: none;
-    background-color: whitesmoke;
-    width: 24%;
-    padding: 18px 12px;
-    height: auto;
-    cursor: pointer;
-    box-shadow: 4px 4px rgb(202, 202, 202);
+  width: 100%;
+  @media screen and(max-width:1000px) {
+    flex-direction: column;
+    padding-bottom: 30px;
   }
+  > div {
+    width: 50%;
+    @media screen and(max-width:1000px) {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    @media screen and(max-width:500px) {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+      background-color: whitesmoke;
+      width: 50%;
+      padding: 18px 12px;
+      height: auto;
+      cursor: pointer;
+      box-shadow: 4px 4px rgb(202, 202, 202);
+      @media screen and(max-width:500px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   &__item {
     position: relative;
     color: #424344;
@@ -76,6 +102,9 @@
 }
 .graphics {
   padding-bottom: 60px;
+  @media screen and(max-width:650px) {
+    flex-direction: column;
+  }
   > div {
     display: block;
     text-decoration: none;
@@ -85,6 +114,10 @@
     height: auto;
     cursor: pointer;
     box-shadow: 4px 4px rgb(202, 202, 202);
+    @media screen and(max-width:650px) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
   }
   &__item {
     position: relative;
@@ -99,6 +132,9 @@
       align-items: center;
       background-color: #448b00;
       box-shadow: 2px 2px rgb(202, 202, 202);
+      @media screen and(max-width:650px) {
+        height: 180px;
+      }
       &.orange {
         background-color: #d99f24;
       }
@@ -115,6 +151,9 @@
       padding-top: 120px;
       font-size: 16px;
       margin-bottom: 6px;
+      @media screen and(max-width:650px) {
+        padding-top: 170px;
+      }
     }
     &_description {
       font-size: 12px;
@@ -137,6 +176,14 @@
 }
 .tasks {
   padding-bottom: 60px;
+  @media screen and(max-width:1000px) {
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  :last-child{
+    margin-bottom: 0;
+  }
   > div {
     display: block;
     text-decoration: none;
@@ -144,8 +191,12 @@
     width: 50%;
     padding: 18px 12px;
     height: auto;
-
     box-shadow: 4px 4px rgb(202, 202, 202);
+    @media screen and(max-width:1000px) {
+      width: 100%;
+     gap: 0;
+     margin-bottom: 30px;
+    }
   }
   &__item {
     position: relative;
@@ -164,6 +215,9 @@
         h3 {
           padding: 12px 12px 12px 8px;
           font-size: 12px;
+          @media screen and(max-width:360px) {
+            padding: 10px 8px 10px 6px;
+          }
         }
       }
       &.blue {
@@ -193,44 +247,44 @@
       }
     }
 
-    .content__tabs, .tasks__employees {
+    .content__tabs,
+    .tasks__employees {
       padding-top: 50px;
-     
-        .tg {
-          border-collapse: collapse;
-          border-spacing: 0;
-          width: 100%;
-          color: #424344;
-          img {
-            width: 16px;
-            height: 16px;
-          }
+
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        color: #424344;
+        img {
+          width: 16px;
+          height: 16px;
         }
-        .tg td {
-          font-size: 12px;
-          line-height: 1.2;
-          overflow: hidden;
-          padding: 6px;
-          word-break: normal;
-          text-align: left;
-          vertical-align: middle;
-          width: fit-content;
-        }
-        .tg th {
-          font-size: 12px;
-          line-height: 1.2;
-          color: #559a9c;
-          overflow: hidden;
-          padding: 18px 6px 6px 6px;
-          word-break: normal;
-          text-align: left;
-          vertical-align: middle;
-          width: fit-content;
-        }
-        .tg .tg-wo29 {
-          border-bottom: 1px solid #c0c0c0;
-        }
-      
+      }
+      .tg td {
+        font-size: 12px;
+        line-height: 1.2;
+        overflow: hidden;
+        padding: 6px;
+        word-break: normal;
+        text-align: left;
+        vertical-align: middle;
+        width: fit-content;
+      }
+      .tg th {
+        font-size: 12px;
+        line-height: 1.2;
+        color: #559a9c;
+        overflow: hidden;
+        padding: 18px 6px 6px 6px;
+        word-break: normal;
+        text-align: left;
+        vertical-align: middle;
+        width: fit-content;
+      }
+      .tg .tg-wo29 {
+        border-bottom: 1px solid #c0c0c0;
+      }
     }
     hr {
       height: 2px;

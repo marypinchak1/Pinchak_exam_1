@@ -8,6 +8,11 @@ let slider = $(document).ready(function () {
   });
 });
 
+$('.header__burger').on('click', function(){
+  $('.header__burger').toggleClass('active');
+  $('.sidebar').toggleClass('active');
+})
+
 $(".item").on("click", function () {
   $(".item").removeClass("active");
   $(this).addClass("active");
