@@ -1,4 +1,5 @@
 .dashboard {
+  // display: none;
   margin-left: 20%;
   background-color: #eaeaea;
   padding-top: 30px;
@@ -51,10 +52,10 @@
   }
 
   &__item {
-    position: relative;
+    
     color: #424344;
     &_icon {
-      position: absolute;
+      transform: translateY(-40px);
       width: 60px;
       height: 60px;
       top: -30px;
@@ -120,10 +121,10 @@
     }
   }
   &__item {
-    position: relative;
+    
     color: #424344;
     &_icon {
-      position: absolute;
+      transform: translateY(-40px);
       width: 100%;
       height: 130px;
       top: -30px;
@@ -199,10 +200,10 @@
     }
   }
   &__item {
-    position: relative;
+   
     color: #424344;
     &_icon {
-      position: absolute;
+      transform: translateY(-40px);
       width: 100%;
       padding: 12px;
       top: -30px;
