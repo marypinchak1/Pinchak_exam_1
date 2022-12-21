@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <main class="profile">
+    <main class="profile content" data-tabs="2">
       <h1 class="profile__title">User Profile</h1>
       <section class="form">
         <div class="container">
@@ -22,7 +22,7 @@
                 </div>
 
                 <form class="form__item_data">
-                  <div class="d-flex gap-3 mb-2">
+                  <div class="d-flex gap-4 mb-2">
                     <div>
                       <label for="company">Company</label>
                       <input id="company" type="text" />
@@ -36,21 +36,21 @@
                       <input id="email" type="email" />
                     </div>
                   </div>
-                  <div class="d-flex gap-3 mb-2">
-                    <div class="w-50">
+                  <div class="d-flex gap-4 mb-2 ">
+                    <div>
                       <label for="first-name">First name</label>
-                      <input class="w-100" id="first-name" type="text" />
+                      <input id="first-name" type="text" />
                     </div>
-                    <div class="w-50">
+                    <div>
                       <label for="last-name">Last name</label>
-                      <input class="w-100" id="last-name" type="text" />
+                      <input id="last-name" type="text" />
                     </div>
                   </div>
                   <div class="mb-2">
                     <label for="address">Address</label>
-                    <input class="w-100" id="address" type="text" />
+                    <input id="address" type="text" />
                   </div>
-                  <div class="d-flex gap-3 mb-2">
+                  <div class="d-flex gap-4 mb-2">
                     <div>
                       <label for="city">City</label>
                       <input id="city" type="text" />
@@ -64,16 +64,19 @@
                       <input id="postal-code" type="text" />
                     </div>
                   </div>
-                  <div class="w-100">
+                  <div>
                     <label for="about-me">About me</label>
-                    <textarea class="w-100" id="about-me" rows="2"></textarea>
-                  </div>
+                    <textarea id="about-me" rows="2"></textarea>
+                  </div >
+                  <button type="button">UPDATE PROFILE</button>
                 </form>
               </div>
 
-              <div class="form__ceo col-4 d-flex flex-column  justify-content-center ">
-                <div class=" w-100" ><img src="img/thompson.jpeg" alt=""></div>
-                
+              <div
+                class="form__ceo col-4 d-flex flex-column justify-content-center"
+              >
+                <div class="w-100"><img src="img/thompson.jpeg" alt="" /></div>
+
                 <h4>CEO / CO-FOUNDER</h4>
                 <h3>Alec Thompson</h3>
                 <p>

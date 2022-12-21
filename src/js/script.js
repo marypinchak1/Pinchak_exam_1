@@ -13,8 +13,8 @@ $('.header__burger').on('click', function(){
   $('.sidebar').toggleClass('active');
 })
 
-$(".item").on("click", function () {
-  $(".item").removeClass("active");
+$(".sidebar__nav a").on("click", function () {
+  $(".sidebar__nav a").removeClass("active");
   $(this).addClass("active");
   let tabs = $(this).data("tabs");
   $(".content").addClass("d-none");

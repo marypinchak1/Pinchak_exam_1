@@ -1,4 +1,5 @@
 .profile {
+  display: none;
   margin-left: 20%;
   background-color: #eaeaea;
   padding-top: 30px;
@@ -30,12 +31,12 @@
       }
       &_icon {
         transform: translateY(-40px);
-        width: 96%;
-        padding: 12px;
+        width: 100%;
+        padding: 18px;
         color: whitesmoke;
         background-color: #c32055;
         box-shadow: 2px 2px rgb(202, 202, 202);
-        box-sizing: content-box;
+       
         h2 {
           margin-bottom: 8px;
         }
@@ -44,8 +45,8 @@
         }
       }
       &_data {
-        max-width: 100%;
         transform: translateY(-20px);
+      
         label {
           color: #424344;
           font-size: 10px;
@@ -55,6 +56,20 @@
           border: none;
           border-bottom: 2px solid #c8c9ca;
           background-color: transparent;
+          width: 100% !important;
+        
+        }
+        button{
+          cursor: pointer;
+          padding: 8px 40px;
+          background-color: #c32055;
+          color: whitesmoke;
+          text-transform: uppercase;
+          border: none;
+          font-size: 14px;
+          font-weight: 500;
+          float: right;
+          transform: translateY(16px);
         }
       }
     }
@@ -68,25 +83,27 @@
       box-shadow: 3px 5px rgb(202, 202, 202);
       margin-left: 12px;
       text-align: center;
-      max-height: max-content;
+      height: 60%;
 
-        img {
-          border-radius: 50%;
-          transform: translateY(-60px);
-          max-width: 50%;
-          box-shadow: 4px 6px 12px #888888;
-      }
-      h4{
+      img {
+        border-radius: 50%;
         transform: translateY(-40px);
-        font-size: 14px;
+        max-width: 40%;
+        box-shadow: 4px 6px 12px #888888;
       }
-      h3{
+      h4 {
+        transform: translateY(-30px);
+        font-size: 10px;
+      }
+      h3 {
         transform: translateY(-20px);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 900;
       }
-      p{
-        line-height: 1.2;
+      p {
+        line-height: 1.4;
+        transform: translateY(-10px);
+        font-size: 12px;
       }
     }
   }
