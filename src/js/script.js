@@ -13,11 +13,19 @@ $('.header__burger').on('click', function(){
   $('.sidebar').toggleClass('active');
 })
 
-$(".sidebar__nav a").on("click", function () {
-  $(".sidebar__nav a").removeClass("active");
+$(".item").on("click", function () {
+  $(".item").removeClass("active");
   $(this).addClass("active");
   let tabs = $(this).data("tabs");
   $(".content").addClass("d-none");
   $(".content[data-tabs = " + tabs + "]").removeClass("d-none");
   $(".content[data-tabs = " + tabs + "]").addClass("d-block");
+});
+$(".sidebar__nav a").on("click", function () {
+  $(".sidebar__nav a").removeClass("active");
+  $(this).addClass("active");
+  let tabs = $(this).data("tabs");
+  $(".content-secondary").addClass("d-none");
+  $(".content-secondary[data-tabs = " + tabs + "]").removeClass("d-none");
+  $(".content-secondary[data-tabs = " + tabs + "]").addClass("d-block");
 });

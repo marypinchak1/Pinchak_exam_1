@@ -6,6 +6,9 @@
   background-color: whitesmoke;
   position: fixed;
   border-right: 5px solid rgba(0, 0, 0, 0.2);
+  @media screen and(max-width:1000px) {
+    width: 25%;
+  }
   @media screen and(max-width:800px) {
     display: none;
   }
