@@ -6,11 +6,25 @@
   background-color: whitesmoke;
   position: fixed;
   border-right: 5px solid rgba(0, 0, 0, 0.2);
+ 
   @media screen and(max-width:1000px) {
     width: 25%;
   }
   @media screen and(max-width:800px) {
-    display: none;
+   transform: translateX(-100%);
+   width: 100%;
+   transition: 0.4s;
+   z-index: 1;
+    &.active{
+      transform: translateX(0);
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+      width: 100%;
+      transition: 0.8s;
+      overflow: hidden;
+
+    }
   }
   &__title {
     padding: 30px 10px 10px 10px;
@@ -53,6 +67,7 @@
             background-color: #c32055;
             color: whitesmoke;
             border: 1px solid #c5708d;
+            
           }
           &.active svg {
             fill: whitesmoke;
