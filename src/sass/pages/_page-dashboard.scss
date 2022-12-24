@@ -38,24 +38,22 @@
       flex-direction: column;
       padding-bottom: 0;
     }
-    a {
-      text-decoration: none;
-      background-color: whitesmoke;
-      width: 50%;
-      padding: 18px 12px;
-      height: auto;
-      cursor: pointer;
-      box-shadow: 4px 4px rgb(202, 202, 202);
-      @media screen and(max-width:500px) {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
   }
-
   &__item {
-    position: relative;
-    color: #424344;
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 18px 12px;
+    height: auto;
+    box-shadow: 4px 4px rgb(202, 202, 202);
+    @media screen and(max-width:500px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    > div {
+      position: relative;
+      color: #424344;
+    }
     &_icon {
       position: absolute;
       width: 60px;
@@ -90,7 +88,9 @@
     hr {
       height: 2px;
     }
-    div {
+    a {
+      text-decoration: none;
+      color: #424344;
       img {
         width: 12px;
         height: 12px;
@@ -103,6 +103,7 @@
     }
   }
 }
+
 .graphics {
   padding-bottom: 60px;
   @media screen and(max-width:650px) {
@@ -115,7 +116,6 @@
     width: 34%;
     padding: 18px 12px;
     height: auto;
-    cursor: pointer;
     box-shadow: 4px 4px rgb(202, 202, 202);
     @media screen and(max-width:650px) {
       margin-bottom: 30px;
@@ -284,6 +284,13 @@
       }
       .tg .tg-wo29 {
         border-bottom: 1px solid #c0c0c0;
+      }
+      input,
+      label {
+        cursor: pointer;
+        /* &:focus-visible span {
+          text-decoration: line-through;
+        } */
       }
     }
     hr {

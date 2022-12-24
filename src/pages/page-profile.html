@@ -13,12 +13,12 @@
             <input id="company" type="text" />
           </div>
           <div>
-            <label for="username">Username</label>
-            <input id="username" type="text" />
+            <label for="username">Username *</label>
+            <input id="username" value="test" type="text" required/>
           </div>
           <div>
-            <label for="email">Email address</label>
-            <input id="email" type="email" />
+            <label for="email">Email address *</label>
+            <input id="email" value="test@gmail.com"  type="email" required/>
           </div>
         </div>
         <div class="d-flex gap-4 mb-2">
@@ -45,15 +45,15 @@
             <input id="country" type="text" />
           </div>
           <div>
-            <label for="postal-code">Postal code</label>
-            <input id="postal-code" type="text" />
+            <label for="postal-code">Postal code *</label>
+            <input id="postal-code" value="82100"  type="number" required/>
           </div>
         </div>
         <div>
           <label for="about-me">About me</label>
           <textarea id="about-me" rows="2"></textarea>
         </div>
-        <button type="button">UPDATE PROFILE</button>
+        <button type="submit">UPDATE PROFILE</button>
       </form>
     </div>
     <div class="form__ceo d-flex flex-column justify-content-center">

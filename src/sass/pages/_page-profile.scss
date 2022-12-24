@@ -86,6 +86,11 @@
           font-weight: 500;
           float: right;
           transform: translateY(16px);
+          transition: 0.8s;
+          &:hover{
+            background-color: #aa1849;
+            transition: 0.8s;
+          }
         }
       }
     }
