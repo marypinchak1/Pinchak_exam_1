@@ -5,6 +5,7 @@ $('.header__burger').on('click', function(){
   
 })
 
+
 $(".item").on("click", function () {
   $(".item").removeClass("active");
   $(this).addClass("active");
@@ -13,6 +14,7 @@ $(".item").on("click", function () {
   $(".content[data-tabs = " + tabs + "]").removeClass("d-none");
   $(".content[data-tabs = " + tabs + "]").addClass("d-block");
 });
+
 $(".sidebar__nav a").on("click", function () {
   $(".sidebar__nav a").removeClass("active");
   $(this).addClass("active");
