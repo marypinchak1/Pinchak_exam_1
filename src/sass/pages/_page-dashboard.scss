@@ -1,21 +1,8 @@
 .dashboard {
-  margin-left: 20%;
-  background-color: #eaeaea;
-  padding-top: 30px;
-  padding-left: 2%;
-  padding-right: 2%;
-  @media screen and(max-width:1000px) {
-    margin-left: 25%;
-  }
-  @media screen and(max-width:800px) {
-    margin-left: 0;
-    position: relative;
-  }
+  @include main-page;
   &__title {
+    @include title;
     padding-bottom: 66px;
-    font-size: 22px;
-    font-weight: 800;
-    color: #424344;
     @media screen and(max-width:800px) {
       margin-left: 60px;
     }
@@ -40,7 +27,7 @@
     }
   }
   &__item {
-    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
     width: 50%;
     padding: 18px 12px;
     height: auto;
@@ -49,10 +36,9 @@
       width: 100%;
       margin-bottom: 30px;
     }
-
     > div {
       position: relative;
-      color: #424344;
+      color: var(--main-color);
     }
     &_icon {
       position: absolute;
@@ -62,13 +48,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #448b00;
+      background-color: var(--fours-item-bg-color);
       box-shadow: 2px 2px rgb(202, 202, 202);
       &.orange {
-        background-color: #d99f24;
+        background-color: var(--second-item-bg-color);
       }
       &.blue {
-        background-color: #274d98;
+        background-color: var(--third-item-bg-color);
       }
       &.pink {
         background-color: #c32055;
@@ -90,7 +76,7 @@
     }
     a {
       text-decoration: none;
-      color: #424344;
+      color: var(--main-color);
       img {
         width: 12px;
         height: 12px;
@@ -103,7 +89,6 @@
     }
   }
 }
-
 .graphics {
   padding-bottom: 60px;
   @media screen and(max-width:650px) {
@@ -112,7 +97,7 @@
   > div {
     display: block;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
     width: 34%;
     padding: 18px 12px;
     height: auto;
@@ -124,7 +109,7 @@
   }
   &__item {
     position: relative;
-    color: #424344;
+    color: var(--main-color);
     &_icon {
       position: absolute;
       width: 100%;
@@ -133,23 +118,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #448b00;
+      background-color: var(--fours-item-bg-color);
       box-shadow: 2px 2px rgb(202, 202, 202);
       @media screen and(max-width:650px) {
         height: 180px;
       }
       &.orange {
-        background-color: #d99f24;
+        background-color: var(--second-item-bg-color);
       }
       &.blue {
-        background-color: #274d98;
+        background-color: var(--third-item-bg-color);
       }
       &_img {
         width: 86% !important;
         height: 80% !important;
       }
     }
-
     &_name {
       padding-top: 120px;
       font-size: 16px;
@@ -190,7 +174,7 @@
   > div {
     display: block;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: var(--secondary-bg-color);
     width: 50%;
     padding: 18px 12px;
     height: auto;
@@ -203,7 +187,7 @@
   }
   &__item {
     position: relative;
-    color: #424344;
+    color: var(--main-color);
     &_icon {
       position: absolute;
       width: 100%;
@@ -214,7 +198,7 @@
       color: whitesmoke;
       box-shadow: 2px 2px rgb(202, 202, 202);
       &.orange {
-        background-color: #d99f24;
+        background-color: var(--second-item-bg-color);
         h3 {
           padding: 12px 12px 12px 8px;
           font-size: 12px;
@@ -224,7 +208,7 @@
         }
       }
       &.blue {
-        background-color: #274d98;
+        background-color: var(--third-item-bg-color);
         flex-direction: column;
         align-items: start;
         h2 {
@@ -255,7 +239,7 @@
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
-        color: #424344;
+        color: var(--main-color);
         img {
           width: 16px;
           height: 16px;
@@ -274,7 +258,7 @@
       .tg th {
         font-size: 12px;
         line-height: 1.2;
-        color: #559a9c;
+        color: var(--text-th-color);
         overflow: hidden;
         padding: 18px 6px 6px 6px;
         word-break: normal;
@@ -292,7 +276,6 @@
           text-decoration: line-through;
         } */
       }
-    
     }
     hr {
       height: 2px;

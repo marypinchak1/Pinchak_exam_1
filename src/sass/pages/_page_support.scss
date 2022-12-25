@@ -1,23 +1,10 @@
 .support {
   display: none;
-  margin-left: 20%;
-  background-color: #eaeaea;
-  padding-top: 30px;
-  padding-left: 2%;
-  padding-right: 2%;
+  @include main-page;
   padding-bottom: 50px;
-  @media screen and(max-width:1000px) {
-    margin-left: 25%;
-  }
-  @media screen and(max-width:800px) {
-    margin-left: 0;
-    position: relative;
-  }
   &__title {
+    @include title;
     padding-bottom: 66px;
-    font-size: 22px;
-    font-weight: 800;
-    color: #424344;
     @media screen and(max-width:800px) {
       margin-left: 60px;
     }

@@ -1,13 +1,11 @@
-
-$('.header__burger').on('click', function(){
-  $('.header__burger').toggleClass('active');
-  $('.sidebar').toggleClass('active');
-  
-})
+$(".header__burger").on("click", function () {
+  $(".header__burger").toggleClass("active");
+  $(".sidebar").toggleClass("active");
+});
 $(".sidebar__nav a").on("click", function () {
   $(".sidebar").removeClass("active");
-  $('.header__burger').removeClass('active');
-})
+  $(".header__burger").removeClass("active");
+});
 $(".item").on("click", function () {
   $(".item").removeClass("active");
   $(this).addClass("active");

@@ -21,7 +21,6 @@
     ul {
       display: flex;
       align-items: center;
-
       @media screen and(max-width:650px) {
       }
       li {
@@ -30,18 +29,16 @@
         a {
           text-decoration: none;
           padding: 14px;
- 
           h2 {
             color: #424344;
             text-transform: uppercase;
             font-weight: 800;
             font-size: 14px;
-            padding: 14px;       
+            padding: 14px;
             border-radius: 4px;
-             &:hover {
-            background-color: #faf9f9;
-          }
-
+            &:hover {
+              background-color: #faf9f9;
+            }
           }
         }
       }
