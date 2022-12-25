@@ -22,11 +22,11 @@
       margin-left: 60px;
     }
   }
-  .form {
+  &__form {
     @media screen and(max-width:1000px) {
       flex-direction: column;
     }
-    &__item {
+    &_item {
       color: #424344;
       display: block;
       text-decoration: none;
@@ -87,14 +87,14 @@
           float: right;
           transform: translateY(16px);
           transition: 0.8s;
-          &:hover{
+          &:hover {
             background-color: #aa1849;
             transition: 0.8s;
           }
         }
       }
     }
-    &__ceo {
+    &_ceo {
       color: #424344;
       display: block;
       text-decoration: none;
